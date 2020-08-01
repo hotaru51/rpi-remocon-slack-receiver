@@ -1,0 +1,121 @@
+{
+  "resource": "/",
+  "path": "/",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip,deflate",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/json",
+    "Host": "xxxxxxxxxx.execute-api.ap-northeast-1.amazonaws.com",
+    "User-Agent": "Slackbot 1.0 (+https://api.slack.com/robots)",
+    "Via": "1.1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxx",
+    "X-Amzn-Trace-Id": "Root=x-xxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxx",
+    "X-Forwarded-For": "x.x.x.x, y.y.y.y",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https",
+    "X-Slack-Request-Timestamp": "1591708667",
+    "X-Slack-Signature": "v0=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "Accept-Encoding": [
+      "gzip,deflate"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Host": [
+      "xxxxxxxxxx.execute-api.ap-northeast-1.amazonaws.com"
+    ],
+    "User-Agent": [
+      "Slackbot 1.0 (+https://api.slack.com/robots)"
+    ],
+    "Via": [
+      "1.1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxx"
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-xxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "X-Forwarded-For": [
+      "x.x.x.x, y.y.y.y"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ],
+    "X-Slack-Request-Timestamp": [
+      "1591708667"
+    ],
+    "X-Slack-Signature": [
+      "v0=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "xxxxxxxxxx",
+    "resourcePath": "/",
+    "httpMethod": "POST",
+    "extendedRequestId": "xxxxxxxxxxxxxxxx",
+    "requestTime": "09/Jun/2020:13:17:47 +0000",
+    "path": "/hoge/",
+    "accountId": "xxxxxxxxxxxx",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "xxxxxxxxxx",
+    "requestTimeEpoch": 1591708667644,
+    "requestId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "x.x.x.x",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "Slackbot 1.0 (+https://api.slack.com/robots)",
+      "user": null
+    },
+    "domainName": "xxxxxxxxxx.execute-api.ap-northeast-1.amazonaws.com",
+    "apiId": "xxxxxxxxxx"
+  },
+  "body": "{\"token\":\"xxxxxxxxxxxxxxxxxxxxxxxx\",\"challenge\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"type\":\"url_verification\"}",
+  "isBase64Encoded": false
+}
