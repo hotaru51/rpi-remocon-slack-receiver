@@ -10,7 +10,8 @@ export class RpiRemoconSlackReceiverStack extends cdk.Stack {
 
         // SQS
         const receiverQueueProps: sqs.QueueProps = {
-            queueName: 'RpiRemoconSlackReceiverQueue'
+            queueName: 'RpiRemoconSlackReceiverQueue',
+            receiveMessageWaitTime: cdk.Duration.seconds(20)
         }
         const receiverQueue = new sqs.Queue(this, 'receiverQueue', receiverQueueProps)
 
