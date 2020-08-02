@@ -37,5 +37,15 @@ export class RpiRemoconSlackReceiverStack extends cdk.Stack {
             handler: receiverLambda
         }
         const receiverApiGateway = new apigateway.LambdaRestApi(this, 'receiverApiGateway', receiverApiGatewayProps)
+
+        // rpi-remocon-container IAM User
+        const remoconContainerUserProps: iam.UserProps = {
+            userName: 'RpiRemoconContainer'
+        }
+        const remoconContainerUser = new iam.User(this, 'remoconContainerUser', remoconContainerUserProps)
+        remoconContainerUser.addToPolicy(new iam.PolicyStatement({
+            actions: ['sqs:ReceiveMessage'],
+            resources: [receiverQueue.queueArn]
+        }))
     }
 }
