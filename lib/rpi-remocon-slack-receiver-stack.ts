@@ -45,7 +45,11 @@ export class RpiRemoconSlackReceiverStack extends cdk.Stack {
         }
         const remoconContainerUser = new iam.User(this, 'remoconContainerUser', remoconContainerUserProps)
         remoconContainerUser.addToPolicy(new iam.PolicyStatement({
-            actions: ['sqs:ReceiveMessage'],
+            actions: [
+                'sqs:ReceiveMessage',
+                'sqs:DeleteMessage',
+                'sqs:GetQueueAttributes'
+            ],
             resources: [receiverQueue.queueArn]
         }))
     }
